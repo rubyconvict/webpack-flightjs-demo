@@ -1,4 +1,4 @@
 webpack-flightjs-primer
 =======================
 
-Demonstrates how to use webpack to build a simple Flight web application
+The goal of this showcase project to show how <a href="http://webpack.github.io/">webpack</a> module bundler can be used for building a <a href="http://flightjs.github.io/">FlightJS</a> application without using RequireJS module loader.
