@@ -14,3 +14,4 @@ Run
 TODO
 ----
  - i18n
+ - add a test / webpack + karma
