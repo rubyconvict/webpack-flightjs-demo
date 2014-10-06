@@ -1,0 +1,3 @@
+<button>{{label}}</button>
+<p class="note">Fired at: <span><em>{{now}}</em></span></p>
+
