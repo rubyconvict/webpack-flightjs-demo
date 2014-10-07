@@ -3,7 +3,16 @@ var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 var conf = {
-  entry: './app/scripts/app.js',
+  entry: {
+    app: './app/scripts/app.js',
+    vendor: [
+      'jquery',
+      'flight',
+      'hogan.js',
+      'normalize-css',
+      'font-awesome-webpack'
+    ]
+  },
   output: {
     path: path.join(__dirname, 'dist'),
     filename: '[hash].bundle.js'
@@ -44,7 +53,15 @@ var conf = {
     ]
   },
   resolve: {
-    modulesDirectories: ['bower_components', 'node_modules', 'scripts', 'templates', 'styles', 'images', 'ico']
+    modulesDirectories: [
+      'bower_components',
+      'node_modules',
+      'scripts',
+      'templates',
+      'styles',
+      'images',
+      'ico'
+    ]
   },
   plugins: [
     new webpack.ProvidePlugin({
@@ -57,7 +74,8 @@ var conf = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'app/index.html'
-    })
+    }),
+    new webpack.optimize.CommonsChunkPlugin('vendor', '[hash].vendor.bundle.js')
   ]
 };
 
