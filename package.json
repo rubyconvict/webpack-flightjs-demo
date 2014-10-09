@@ -30,7 +30,7 @@
     "font-awesome-webpack": "0.0.2",
     "hogan.js": "^3.0.2",
     "html-webpack-plugin": "^1.1.0",
-    "json-loader": "^0.5.1",
+    "messageformat": "^0.2.1",
     "mustache-loader": "^0.1.4",
     "sass-loader": "^0.2.0",
     "style-loader": "^0.8.1",
