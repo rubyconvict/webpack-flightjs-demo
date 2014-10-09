@@ -1,6 +1,9 @@
 var path = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var ProvidePlugin = webpack.ProvidePlugin;
+var ResolverPlugin = webpack.ResolverPlugin;
+var CommonsChunkPlugin = webpack.optimize.CommonsChunkPlugin;
 
 var conf = {
   entry: {
@@ -59,23 +62,22 @@ var conf = {
       'scripts',
       'templates',
       'styles',
-      'images',
-      'ico'
+      'images'
     ]
   },
   plugins: [
-    new webpack.ProvidePlugin({
+    new ProvidePlugin({
       $: 'jquery',
       jQuery: 'jquery'
     }),
-    new webpack.ResolverPlugin([
-      new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin('bower.json', ['main'])
+    new ResolverPlugin([
+      new ResolverPlugin.DirectoryDescriptionFilePlugin('bower.json', ['main'])
     ]),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'app/index.html'
     }),
-    new webpack.optimize.CommonsChunkPlugin('vendor', '[hash].vendor.bundle.js')
+    new CommonsChunkPlugin('vendor', '[hash].vendor.bundle.js')
   ]
 };
 
