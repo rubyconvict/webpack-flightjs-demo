@@ -28,8 +28,6 @@
     "file-loader": "^0.7.2",
     "hogan.js": "^3.0.2",
     "html-webpack-plugin": "^1.1.0",
-    "less": "^2.4.0",
-    "less-loader": "^2.0.0",
     "mustache-loader": "^0.1.4",
     "sass-loader": "^0.2.0",
     "style-loader": "^0.8.1",
