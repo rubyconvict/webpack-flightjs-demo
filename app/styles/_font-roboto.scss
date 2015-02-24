@@ -1,25 +1,25 @@
 $font-path: "../fonts" !default;
 
 @font-face {
-  font-family: 'Roboto';
-  src: url("#{$font-path}/Roboto-Regular.ttf") format("truetype");
+    font-family: 'Roboto';
+    src: url("#{$font-path}/Roboto-Regular.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url("#{$font-path}/Roboto-Italic.ttf") format("truetype");
-  font-style: italic;
+    font-family: 'Roboto';
+    src: url("#{$font-path}/Roboto-Italic.ttf") format("truetype");
+    font-style: italic;
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url("#{$font-path}/Roboto-Bold.ttf") format("truetype");
-  font-weight: bold;
+    font-family: "Roboto";
+    src: url("#{$font-path}/Roboto-Bold.ttf") format("truetype");
+    font-weight: bold;
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url("#{$font-path}/Roboto-BoldItalic.ttf") format("truetype");
-  font-weight: bold;
-  font-style: italic;
+    font-family: "Roboto";
+    src: url("#{$font-path}/Roboto-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
 }
