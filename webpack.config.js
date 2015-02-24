@@ -12,8 +12,7 @@ var conf = {
       'jquery',
       'flight',
       'hogan.js',
-      'normalize-css',
-      'font-awesome-webpack'
+      'normalize-css'
     ]
   },
   output: {
