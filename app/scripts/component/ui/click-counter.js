@@ -13,7 +13,7 @@ function clickCounter() {
   this.onClick = function (e) {
     this.counter++;
 
-    this.button.innerHTML = this.counter;// + '&nbsp;' + (this.counter > 1 ? msg.plural : msg.single);
+    this.button.innerHTML = this.counter;
     this.note.innerHTML = new Date(e.timeStamp);
     this.trigger('uiClickedMore');
   };
