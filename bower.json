@@ -23,6 +23,8 @@
   ],
   "dependencies": {
     "flight": "~1.5.0",
-    "normalize-css": "~3.0.1"
+    "normalize-css": "~3.0.1",
+    "fetch": "~0.7.0",
+    "es6-promise": "~2.0.1"
   }
 }

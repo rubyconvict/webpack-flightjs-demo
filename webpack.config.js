@@ -12,7 +12,9 @@ var conf = {
             'jquery',
             'flight',
             'hogan.js',
-            'normalize-css'
+            'normalize-css',
+            'es6-promise',
+            'fetch'
         ]
     },
     output: {
@@ -23,7 +25,7 @@ var conf = {
         loaders: [
             {
                 test: /\.hgn$/,
-                loader: 'mustache'
+                loader: 'mustache?noShortcut'
             },
             {
                 test: /\.woff(\?v=[0-9]\.[0-9]\.[0-9])?$/,

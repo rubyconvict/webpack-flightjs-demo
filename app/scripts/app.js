@@ -2,5 +2,5 @@
 
 require('main.scss');
 
-var ClickCounterUI = require('component/ui/click-counter');
-ClickCounterUI.attachTo('#click-counter');
+require('component/data/users').attachTo(document);
+require('component/ui/users-list').attachTo("#users");

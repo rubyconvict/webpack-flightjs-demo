@@ -1,0 +1,9 @@
+<li data-user-id="{{id}}">
+    <div class="primary-info">
+        <div>{{name}}</div>
+        <div>{{email}}</div>
+    </div>
+    <div class="secondary-info">
+        {{status}}
+    </div>
+</li>

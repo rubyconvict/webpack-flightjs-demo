@@ -1,0 +1,8 @@
+<ul id="users">
+    {{#users}}
+        {{> user}}
+    {{/users}}
+    {{#error}}
+        <li>{{error}}</li>
+    {{/error}}
+</ul>
