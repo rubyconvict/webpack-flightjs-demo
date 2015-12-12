@@ -4,7 +4,9 @@
   "description": "Use webpack to build your Flight web application",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error! No test specified!\" && exit 1",
+    "dev": "node_modules/webpack-dev-server/bin/webpack-dev-server.js -d --devtool eval --optimize-dedupe --progress --colors --display-error-details --hot",
+    "deploy": "rm -rf ./dist && NODE_ENV=production node_modules/webpack/bin/webpack.js -p --optimize-dedupe --progress --colors --display-error-details"
   },
   "repository": {
     "type": "git",
@@ -24,15 +26,29 @@
   "homepage": "https://github.com/protolab/webpack-flightjs-demo",
   "devDependencies": {
     "autoprefixer-loader": "^1.0.0",
-    "css-loader": "^0.9.0",
+    "css-loader": "^0.16.0",
     "file-loader": "^0.7.2",
     "hogan.js": "^3.0.2",
     "html-webpack-plugin": "^1.1.0",
-    "mustache-loader": "*",
-    "sass-loader": "^0.2.0",
-    "style-loader": "^0.8.1",
-    "url-loader": "^0.5.5",
+    "jshint": "^2.8.0",
+    "jshint-loader": "^0.8.3",
+    "messageformat": "^0.2.1",
+    "mustache-loader": "^0.3.0",
+    "sass-loader": "^2.0.1",
+    "style-loader": "^0.12.3",
+    "url-loader": "^0.5.6",
     "webpack": "^1.6.0",
     "webpack-dev-server": "^1.7.0"
+  },
+  "dependencies": {
+    "raw-loader": "^0.5.1",
+    "compression-webpack-plugin": "^0.2.0",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "compass-mixins": "^0.12.7",
+    "node-sass": "^3.2.0",
+    "i18n-webpack-plugin": "^0.2.7",
+    "json-loader": "^0.5.1",
+    "bootstrap-sass": "^3.3.3",
+    "bootstrap-sass-loader": "0.0.10"
   }
 }

@@ -6,12 +6,35 @@ The goal of this showcase project is to demonstrate how <a href="http://webpack.
 Run
 ---
 
-`webpack-dev-server -d --optimize-dedupe --progress --colors --display-error-details --hot`
-<br/>
-<br/>
-`rm -rf ./dist && webpack -p --optimize-dedupe --progress --colors --display-error-details`
+npm run-script dev
+
+npm run-script deploy
 
 TODO
 ----
- - i18n
+ - make file loaders work (hashes)
  - add a test / webpack + karma
+
+Install
+---
+
+npm install
+npm install -g bower
+bower install
+
+npm run-script dev
+
+npm run-script deploy
+
+How to install a new plugin?
+---
+
+npm install extract-text-webpack-plugin --save
+npm install compression-webpack-plugin --save
+npm install node-sass --save
+npm install raw-loader --save
+npm install compass-mixins --save
+npm install i18n-webpack-plugin --save
+npm install compass-mixins --save
+
+npm install jshint-loader --save-dev

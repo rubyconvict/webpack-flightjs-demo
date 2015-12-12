@@ -6,7 +6,8 @@ function userData() {
     this.attributes({});
 
     this.fetchUsers = function (e) {
-        fetch(this.usersUri)
+        return [{id: 1, name: 'John', email: 'me@me.com', status: 'active'}];
+        /*fetch(this.usersUri)
             .then(function (resp) {
                 return resp.json();
             }.bind(this))
@@ -18,7 +19,7 @@ function userData() {
 
             .catch(function (err) {
                 this.trigger(e.target, 'data:error:notFound', {error: err});
-            }.bind(this));
+            }.bind(this));*/
     };
 
     this.after('initialize', function () {

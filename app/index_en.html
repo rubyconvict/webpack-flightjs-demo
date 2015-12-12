@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en-US" class="no-js">
+  <head>
+    <title>{%=o.htmlWebpackPlugin.options.meta.title%}</title>
+    <script>
+      document.documentElement.classList.remove("no-js");
+    </script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width,height=device-height,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+
+    <meta name="description" content="{%=o.htmlWebpackPlugin.options.meta.description%}">
+    <meta name="keywords" content="{%=o.htmlWebpackPlugin.options.meta.keywords.join(', ')%}">
+
+    <meta name="og:title" content="{%=o.htmlWebpackPlugin.options.meta.title%}">
+    <meta name="og:site_name" content="{%=o.htmlWebpackPlugin.options.meta.title%}">
+    <meta name="og:url" content="http://{%=o.htmlWebpackPlugin.options.meta.domain%}">
+
+    <script src="{%=o.htmlWebpackPlugin.files.vendor%}"></script>
+  </head>
+
+  <body data-mode="online">
+    <div id="click-counter"></div>
+    <img src="app/images/test.jpg"/>
+
+    <h1>Users</h1>
+    <section id="users"></section>
+
+    <script src="{%=o.htmlWebpackPlugin.files.app_en%}"></script>
+
+    <!--{% for (var chunk in o.htmlWebpackPlugin.files) { %}
+      <script src="{%=o.htmlWebpackPlugin.files[chunk]%}"></script>
+    {% } %}-->
+
+    <noscript class="no-js-info">
+      <h1>{%=o.htmlWebpackPlugin.options.meta.title%}</h1>
+      <p>This website requires JavaScript to retrieve content.</p>
+      <p>
+        <a href="http://enable-javascript.com" target="_blank">
+        How to enable JavaScript.
+        </a>
+      </p>
+    </noscript>
+  </body>
+</html>
